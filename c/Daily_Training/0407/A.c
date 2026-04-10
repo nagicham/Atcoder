@@ -1,0 +1,23 @@
+#include <stdio.h>
+#define S (6)
+
+int main(void)
+{
+  int n = 0;
+  char s[S + 1];
+
+  scanf("%s", s);
+  for (int i = 3; i < S; i++)
+    {
+      n = n * 10 + s[i] - '0';
+    }
+  if (1 <= n && n <= 349 && n != 316)
+    {
+      printf("Yes\n");
+    }
+  else
+    {
+      printf("No\n");
+    }
+  return 0;
+}
